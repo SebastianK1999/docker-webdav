@@ -1,0 +1,13 @@
+services:
+  webdav:
+    build: .
+    container_name: webdav
+    restart: always
+    environment:
+      - TZ=UTC
+    ports:
+      - 80:80
+    volumes:
+      - ./volume/.secret/:/etc/apache2/.secret/
+      - ./volume/data/:/var/www/webdav/data/
+
