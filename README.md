@@ -14,7 +14,7 @@ Inside the container user can be created with a command.
 ```
 htpasswd /etc/apache2/.secret/webdav_user_file <my_user>
 ```
-* While creating a folder, you need to add permisions to www-data user or group. For my private usecase, is better to just add it to group
+* While creating a folder, you need to add permisions to `www-data` user or group. For my private usecase, is better to just add it to group
 ```
 chgrp -R www-data </path/to/directory>
 ```
