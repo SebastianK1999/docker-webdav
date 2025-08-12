@@ -4,7 +4,7 @@ My (base) docker configuration for localhost webdav
 ## Useful commands
 * Adding user requires modyfing `./config/000-default.conf` file and creating user's drive folder. After it is done container can be built from the compose config.
 ```
-docker compose up --build -d
+docker exec compose up --build -d
 ```
 After the container builds, we can create a user with password. To do that it's needed to log in to container's shell.
 ```
