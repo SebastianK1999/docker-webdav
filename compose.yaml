@@ -6,7 +6,7 @@ services:
     environment:
       - TZ=UTC
     ports:
-      - 80:80
+      - 443:443
     volumes:
       - ./volume/.secret/:/etc/apache2/.secret/
       - ./volume/data/:/var/www/webdav/data/
